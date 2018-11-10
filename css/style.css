@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+@font-face{
+    src: url(../font/Lato-Regular.ttf);
+    font-family: lr;
+}
+@font-face{
+    src: url(../font/Lato-Bold.ttf);
+    font-family: lb;
+}
+.full-wrapper{
+    width: 100%;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+/*========================================== header part css start====================================*/
+.header-bg{
+    width: 100%;
+    background: #f6f9f9;
+}
+.logo{
+    padding-top: 31px;
+    width:240px;
+    float: left;
+}
+.menu{
+    width: 900px;
+    text-align: right;
+    float: left;
+}
+.menu ul li{
+     display: inline-block;
+   
+}
+.menu ul li a{
+    display: block;
+    border-top: 2px solid transparent;
+    font-family: lr;
+    font-size: 24px;
+    color: #222222;
+    line-height: 100px;
+    padding: 0 47px;
+    transition: all linear .3s;
+}
+.menu ul li:hover > a{
+    color: #15a4fa;
+    border-top: 2px solid #15a4fa;
+}
+/*========================================== header part css end====================================*/
+
+/*========================================== BANNER part css START====================================*/
+.banner-bg{
+    position: relative;
+    padding-top: 187px;
+    padding-bottom: 90px;
+    width: 100%;
+    background: url(../images/Strict.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-bg:after{
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 2px;
+    background: #15a4fa;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 337px;
+}
+.banner-text{
+    text-align: center;
+    width: 100%;
+}
+.banner-text h1{
+    font-family: lb;
+    font-size: 120px;
+    color: #ffffff;
+    padding-bottom: 43px;
+}
+.banner-text p{
+    font-family: lr;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 57px;
+}
+.banner-text a{
+    display: inline-block;
+    font-family: lr;
+    font-size: 18px;
+    padding: 21px 18px;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    color: #ffffff;
+    transition: all linear .3s;
+}
+.banner-text a:hover{
+    background: #15a4fa;
+}
+.banner-text i{
+    padding-top: 165px;
+    display: block;
+    font-size: 35px;
+    color: #ffffff;
+}
+/*========================================== BANNER part css END====================================*/
+
+/*========================================== DESIGN-TEXT part css START====================================*/
+.text-bg{
+    width: 100%;
+    background: #f6f9f9;
+}
+.text{
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+.text h2{
+    font-size: 40px;
+    font-family: lr;
+    color: #2d3950;
+    padding-top: 73px;
+    padding-bottom: 15px;
+}
+.text p{
+    line-height: 32px;
+    font-size: 20px;
+    font-family: lr;
+    color: #999999;
+}
+/*========================================== DESIGN-TEXT part css END====================================*/
+
+/*========================================== Icon part css START====================================*/
+.icon-part{
+    width: 1140px;
+    padding-top: 65px;
+}
+.main-div{
+    text-align: center;
+    width: 380px;
+    float: left;
+    margin-bottom: 65px;
+}
+.icon-main{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.sub-div1{
+    width: 50px;
+    height: 100px;
+    float: left;
+    background: #48baff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.sub-div2{
+    width: 50px;
+    height: 100px;
+    float: left;
+    background: #5fc3ff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.icon-main i{
+    font-size: 70px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: all linear .3s;
+}
+.main-div h2{
+    padding-top: 25px;
+    font-size: 22px;
+    font-family: lr;
+    color: #2d3950;
+}
+.main-div p{
+    line-height: 22px;
+    padding-top:20px;
+    font-size: 15px;
+    font-family: lr;
+    color: #999999;
+}
+/*========================================== Icon part css END====================================*/
+
+/*========================================== show cse part css start====================================*/
+.show-bg{
+    width: 100%;
+    background: #f6f9f9;
+}
+.portfolio{
+    padding-top: 90px;
+    padding-bottom: 84px;
+    text-align: center;
+}
+.portfolio h2{
+    padding-bottom: 16px;
+    font-size: 41px;
+    font-family: lr;
+    color: #2d3950;
+}
+.portfolio p{
+    padding-bottom: 83px;
+    font-size: 15px;
+    font-family: lr;
+    color: #909090;
+}
+.one{
+    width: 360px;
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: rgba(31, 158, 238, 0.65);  
+    opacity: 0;
+    transition: all linear .3s;
+}
+.one:hover .overlay{
+    height: 100%;
+    opacity: 1;
+    
+}
+.overlay i{
+    font-size: 15px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin: 0 2px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.a{
+    margin-left: 0;
+    margin-right: 15px;
+    
+}
+.b{
+    margin: 0 15px;
+}
+.c{
+    margin-right: 0;
+    margin-left: 15px;
+}
+/*========================================== show cse part css END====================================*/
+
+/*========================================== form cse part css start====================================*/
+.contact-bg{
+    width: 100%;
+    padding-top: 65px;
+    padding-bottom: 90px;
+    background: url(../images/Strict-last-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text-div{
+    text-align: center;
+    width: 100%;
+}
+.text-div h2{
+    padding-bottom: 10px;
+    font-size: 41px;
+    font-family: lr;
+    color: #ffffff;
+}
+.text-div p{
+    font-size: 15px;
+    font-family: lr;
+    color: #999999;
+}
+.form{
+    text-align: center;
+    padding-top: 50px;
+    width: 555px;
+    margin: 0 auto;
+}
+.form input{
+    width: 555px;
+    padding: 25px 0;
+    padding-left: 20px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background: transparent;
+    margin-bottom: 20px;
+    font-family: lr;
+    color: #999999;
+}
+.form textarea{
+    width: 555px;
+    padding-top:25px;
+    padding-bottom: 124px;
+    padding-left: 20px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background: transparent;
+    margin-bottom: 20px;
+    font-family: lr;
+    color: #999999;
+    resize: none;
+}
+.form button{
+    background: transparent;
+    padding: 16px 50px;
+    border: 1px solid #15a4fa;
+    font-size: 18px;
+    font-family: lr;
+    color: #ffffff; 
+    border-radius: 3px;
+    transition: all linear .3s;
+}
+.form button:hover{
+    background: #15a4fa;
+}
+/*========================================== form cse part css END====================================*/
+
+/*========================================== Footer cse part css start====================================*/
+.footer-bg{
+    padding-bottom: 25px;
+    width: 100%;
+    background: #f6f9f9;
+}
+.text2{
+    padding-top: 30px;
+    width: 300px;
+    text-align: left;
+    float: left;
+}
+.text2 p{
+    font-size: 15px;
+    font-family: lr;
+    color: #999999;
+}
+.icons{
+    padding-top: 25px;
+    text-align: right;
+    width: 840px;
+    float: left;
+}
+.icons i{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #ffffff;
+    background: #15a4fa;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all linear .3s;
+}
+.icons i:hover{
+    background: transparent;
+    color: #15a4fa;
+}
+/*========================================== footer cse part css END====================================*/
